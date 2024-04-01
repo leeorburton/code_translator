@@ -29,39 +29,42 @@ window.onload = pills.forEach(pill => {
 
         let target = pill.dataset.target;
 
-        switch(target) {
+        switch (target) {
             case "htmlPane":
                 htmlPane.forEach(element => {
                     element.classList.add('active');
                 });
-            break;
+                break;
             case "cssPane":
                 cssPane.forEach(element => {
                     element.classList.add('active');
                 });
-            break;
+                break;
             case "jsPane":
                 jsPane.forEach(element => {
                     element.classList.add('active');
                 });
-            break;
+                break;
             case "phpPane":
                 phpPane.forEach(element => {
                     element.classList.add('active');
                 });
-            break;
+                break;
             case "pythonPane":
                 pythonPane.forEach(element => {
                     element.classList.add('active');
                 });
-            break;
+                break;
             case "cplusPane":
                 cplusPane.forEach(element => {
                     element.classList.add('active');
                 });
-            break;
+                break;
         }
 
         pill.classList.add('active');
     });
 });
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))

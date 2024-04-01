@@ -1,1 +1,8 @@
+# Ignore node_modules directory
 node_modules/
+
+# Ignore specific file
+js/chat-gpt.js
+
+# Ignore specific file in a directory
+dist/translate.html
